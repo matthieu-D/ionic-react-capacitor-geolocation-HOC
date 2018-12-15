@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import withGeolocation from './withGeolocation/withGeolocation.jsx';
 
-const Component = props => {
-  return (
-    <div>
-      Just a React Component
-    </div>
-  );
-};
+class SimpleReactComponent extends Component {
+  render() {
+    if(this.props.coords) {
+      return `Latitude: ${this.props.coords.latitude},
+              Longitude: ${this.props.coords.longitude}`;
+    } else {
+      return "No Geolocation data";
+    }
+  }
+}
 
-export default Component;
+export default withGeolocation(SimpleReactComponent);
