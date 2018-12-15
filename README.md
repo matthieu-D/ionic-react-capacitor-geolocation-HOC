@@ -1,1 +1,1 @@
-Source code for:  https://www.javascripttuts.com/ionic-react-in-one-go/
+Source code for:  https://www.javascripttuts.com/using-HOC-capacitor-geolocation-ionic-react-app/
